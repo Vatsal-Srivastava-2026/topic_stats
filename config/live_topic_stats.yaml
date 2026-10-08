@@ -1,0 +1,35 @@
+# Topics can be omitted or set to [] to use the interactive multi-topic selector.
+topics:
+  - /cameraH120_back/cameraH120_back/image_raw
+  - /cameraH120_frnt/cameraH120_frnt/image_raw
+  - /cameraH120_left/cameraH120_left/image_raw
+  - /cameraH120_right/cameraH120_right/image_raw
+  - /odometry/sbg
+  - /radar_scan_pointcloud
+  - /halo_a/data
+  - /halo_a/raw_data
+  - /halo_a/state
+  - /halo_a/events
+  - /arena_camera_node/images
+  - /sbg_for_egomotion/imu/nav_sat_fix
+  - /sbg_for_egomotion/imu/velocity
+  - /sbg_for_egomotion/sbg/ekf_nav
+  - /sbg_for_egomotion/sbg/ekf_quat
+  - /sbg_for_egomotion/sbg/gps_hdt
+  - /sbg_for_egomotion/sbg/gps_pos
+  - /sbg_for_egomotion/sbg/gps_raw
+  - /sbg_for_egomotion/sbg/gps_vel
+
+# Shared settings passed to every launched topic_stats instance.
+duration: 60.0
+windows: [2.0, 1.0, 0.5, 0.25, 0.1]
+output_dir: null  # null uses <topic_stats package>/out
+qos_depth: 1000
+qos_reliability: auto  # auto, reliable, or best_effort
+loop: false
+measure_bytes: false
+
+# Topic discovery window. With configured topics, only topics observed with an
+# active publisher during this period are analyzed; all others are skipped.
+discovery_timeout: 5.0
+include_system_topics: false

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>topic_stats</name>
-  <version>0.1.0</version>
+  <version>0.4.2</version>
   <description>Measure ROS 2 topic frequency, time gaps, and burstiness.</description>
 
   <maintainer email="sava@todo.todo">sava</maintainer>
@@ -11,7 +11,11 @@
 
   <exec_depend>ament_index_python</exec_depend>
   <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
   <exec_depend>rclpy</exec_depend>
+  <exec_depend>rosbag2_py</exec_depend>
+  <exec_depend>rosbag2_storage_mcap</exec_depend>
   <exec_depend>rosidl_runtime_py</exec_depend>
 
   <export>
